@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>utility.ServletContextListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>A04_Servlet</servlet-name>
+        <servlet-class>controller.A04_Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Auth_Controller</servlet-name>
+        <servlet-class>controller.Auth_Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Security_Servlet</servlet-name>
+        <servlet-class>controller.Security_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>A04_Servlet</servlet-name>
+        <url-pattern>/witc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Security_Servlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Auth_Controller</servlet-name>
+        <url-pattern>/auth_login</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>custServEmail</param-name>
+        <param-value>custserv@murach.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>stevesFooterStuff</param-name>
+        <param-value>2019 Steven Heck / Professional monkey trainer</param-value>
+    </context-param>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error_404.jsp</location>
+    </error-page>
+    <!--    
+    <security-role>
+        <description>Pet Hotel Security Roles</description>
+        <role-name>programmer</role-name>
+    </security-role>
+    <security-role>
+        <description>Pet Hotel Security Roles</description>
+        <role-name>staff</role-name>
+    </security-role>-->
+    <!--    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected Area</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>programmer</role-name>
+        </auth-constraint>
+    </security-constraint>-->
+    <!--    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/admin/login.jsp</form-login-page>
+            <form-error-page>/admin/login_error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>-->
+    <session-config>
+        <session-timeout>
+            15
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

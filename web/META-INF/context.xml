@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Steven_AJ_A07_16365660">
+  <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" 
+            logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" 
+            name="jdbc/pet_hotel" password="sesame" removeAbandoned="true" 
+            removeAbandonedTimeout="60" type="javax.sql.DataSource" 
+            url="jdbc:mysql://localhost:3308/pet_hotel_basic" 
+            username="root"/>
+<!--  <Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="root"
+            connectionPassword="sesame" connectionURL="jdbc:mysql://localhost:3308/pet_security"
+            debug="99" driverName="com.mysql.cj.jdbc.Driver" 
+            roleNameCol="role_name" userCredCol="password"
+            userNameCol="user_name" userRoleTable="user_role"
+            userTable="user_pass"/>-->
+<!--  <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" 
+            logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" 
+            name="jdbc/securityDb" password="sesame" removeAbandoned="true" 
+            removeAbandonedTimeout="60" type="javax.sql.DataSource" 
+            url="jdbc:mysql://localhost:3308/pet_security?autoReconnect=true" 
+            username="root"/>
+  
+  <Realm className="org.apache.catalina.realm.DataSourceRealm"
+        dataSourceName="jdbc/securityDb" localDataSoure="true"
+         roleNameCol="role_name" userCredCol="password"
+         userNameCol="user_name" userRoleTable="user_role"
+         userTable="user_pass" debug="99"/>-->
+</Context>

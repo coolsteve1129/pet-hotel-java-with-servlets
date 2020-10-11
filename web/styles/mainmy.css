@@ -1,0 +1,170 @@
+body {    
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid navy;
+}
+section {
+    text-align: center;
+    min-width: 700px;
+    min-height: 100px;
+}
+div{
+    height: 100%;
+    clear:inline-end;
+}
+.tableManageType{  
+    margin:auto;
+}
+nav{    
+    float:left;
+}
+    h1 {    
+    padding-left:20px;
+    color: navy;
+    background-color: lightblue;
+}
+table{    
+    margin: 100px;
+    align-content: center;
+    border-collapse:collapse;
+    border: 2px solid darkcyan;
+}
+table th{ 
+    padding:3px;
+    border-bottom:2px solid;
+    background-color:honeydew;
+    font:all-petite-caps;
+    text-align: center;
+    color:green;
+}
+table td{
+    padding: 5px;
+    white-space: nowrap;
+    overflow:hidden ;
+   font:-moz-dialog ;
+    text-align: center;    
+    max-width:-moz-fit-content;
+}
+title{
+    border-bottom: 1px;
+}
+fieldset {
+    width: 600px;
+    padding: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    border:lavender double 4px;
+    font:-moz-button;
+    font-size: 14px;
+}
+
+a{
+    padding-left: 20px;
+    font:-moz-desktop;
+}
+p{
+    margin-top:40px;
+    font-size: 14px;
+    font:-moz-desktop;
+    padding-left :20px 
+}
+
+.form input{
+    display: inline-block;
+    float:right;
+    text-align: left;
+}
+.form textarea{
+    display: inline-block;
+    float:right;
+    text-align: left;
+    width: 148px;
+}
+.form label{
+    
+    display: inline-block;
+    float: left;
+    text-align: right;
+}
+
+.form select{
+    display: inline-block;
+    float:right;
+    text-align: left;
+    width: 154px;
+}
+
+.form{
+    margin: 0px auto;
+    max-width: 400px; 
+}
+label {   
+    font:-moz-button;
+    text-align: right;
+    width:150px;
+    padding-right: 1em;
+    margin:10px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-right:0;
+    margin-left:10px;
+}
+select{
+    width:8em;
+    margin:10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:20px;
+}
+textArea{
+    margin:10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+input{
+    margin: 10px;
+}
+input[type="button"]{
+    margin: 5px;
+}
+input[type="text"] {  
+    
+    width: 11em;
+    padding: .15em;
+    margin-bottom: 5px;
+    margin-top:5px;
+    margin-left:20px;
+}
+.password{  
+    width: 11em;
+    padding: .15em;
+    margin-bottom: 5px;
+    margin-top:5px;
+    margin-left:20px;
+}
+non-table{
+    margin-left: 20px;
+}
+
+.tableTextbox{
+    max-width: 70px;
+}
+br {
+    clear: inline-end;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+#footer {
+    background-color: lightblue;
+}
+.displayEmployeeGroup{
+    clear:both;
+}
